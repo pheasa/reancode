@@ -1,4 +1,4 @@
-def pheak:
+def pheak():
   print("hello")
-def pheasa:
+def pheasa():
   print("world")
