@@ -1,4 +1,6 @@
-def pheak():
-  print("hello")
-def pheasa():
-  print("world")
+# Test case for httpimport
+# https://github.com/operatorequals/httpimport/
+
+def hello():
+  print("Hello world")
+  
