@@ -1,2 +1,2 @@
-def print(test):
-  print(test)
+def pheak:
+  print("hello")
