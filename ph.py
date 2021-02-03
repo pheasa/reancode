@@ -197,7 +197,7 @@ class Ui_MainWindow(object):
         self.Generate_Cookie.setText(_translate("MainWindow", "Generate Cookie"))
         self.Live.setText(_translate("MainWindow", "Live"))
         
-class ww():
+class mainwork():
     def __init__(self):
         app = QtWidgets.QApplication(sys.argv)
         MainWindow = QtWidgets.QMainWindow()
