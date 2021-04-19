@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+        }
+        .main_product_show{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+        .sub_displaly{
+            float: left;
+            height: 100%;
+        }
+        .list_img{
+            width: 20%;
+            background-color: rosybrown;
+            overflow: scroll;
+        }
+        .list_img::-webkit-scrollbar{
+            display: none;
+        }
+        .list_img img{
+            width: 90%;
+            margin: 5%;
+            cursor: pointer;
+        }
+        .show_img img{
+            width: 100%;
+        }
+        .show_img{
+            width: 80%;
+            background-color: salmon;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_product_show">
+        <div class="sub_displaly list_img" id="list_img">
+            <!-- <img src="/img/img0.jpg" onclick="click_image(this)"> -->
+        </div>
+        <div class="sub_displaly show_img">
+            <img src="/img/img0.jpg" id="big_box_img">
+        </div>
+    </div>
+    <script>
+        var img_names=["img0.jpg","img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+        var i=0
+        for(img_name in img_names){
+            // i+=1;
+            // console.log(img_names[img_name]);
+            document.getElementById("list_img").innerHTML+='<img src="/img/'+img_names[img_name]+'" onclick="click_image(this)">';
+        }
+
+        function click_image(el){
+            var sc=el.getAttribute("src");
+            // console.log(sc);
+            document.getElementById("big_box_img").setAttribute("src",sc);
+        }
+    </script>
+</body>
+</html>
